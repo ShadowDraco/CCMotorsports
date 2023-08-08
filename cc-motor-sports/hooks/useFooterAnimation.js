@@ -1,25 +1,26 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState, useLayoutEffect } from 'react'
 
-const scrollPos = 450;
+const scrollPos = 450
 
 export const useFooterAnimation = mainRef => {
-  const [footerVisible, setFooterVisible] = useState(false);
+  const [footerVisible, setFooterVisible] = useState(false)
 
   const onScroll = () => {
-    const topPos = -mainRef?.current?.getBoundingClientRect().top;
+    const topPos = -mainRef?.current?.getBoundingClientRect().top
 
     if (topPos > scrollPos) {
-      setFooterVisible(true);
+      setFooterVisible(true)
     } else {
-      setFooterVisible(false);
+      setFooterVisible(false)
     }
-  };
+  }
 
   useLayoutEffect(() => {
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll)
 
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    return () => window.removeEventListener('scroll', onScroll)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
-  return footerVisible;
-};
+  return footerVisible
+}

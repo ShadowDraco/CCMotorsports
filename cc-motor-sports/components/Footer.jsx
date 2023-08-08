@@ -1,21 +1,22 @@
-'use client';
-import { useEffect } from 'react';
-import { Flex, Heading } from '@chakra-ui/react';
-import { motion, useAnimate } from 'framer-motion';
+'use client'
+import { useEffect } from 'react'
+import { Flex, Heading } from '@chakra-ui/react'
+import { motion, useAnimate } from 'framer-motion'
 
-import GradientSpan from './wrappers/GradientSpan';
-import HeaderFooterIcons from './MainHeading/HeaderFooterIcons';
+import GradientSpan from './wrappers/GradientSpan'
+import HeaderFooterIcons from './MainHeading/HeaderFooterIcons'
 
 export default function Footer({ visible }) {
-  const [scope, animate] = useAnimate();
+  const [scope, animate] = useAnimate()
 
   useEffect(() => {
     if (visible) {
-      animate(scope.current, { opacity: 1, scale: 1 }, { duration: 1 });
+      animate(scope.current, { opacity: 1, scale: 1 }, { duration: 1 })
     } else {
-      animate(scope.current, { opacity: 0, scale: 0.6 }, { duration: 0.5 });
+      animate(scope.current, { opacity: 0, scale: 0.6 }, { duration: 0.5 })
     }
-  }, [visible]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visible])
   return (
     <Flex
       ref={scope}
@@ -32,16 +33,12 @@ export default function Footer({ visible }) {
       bottom={0}
     >
       <Heading>
-        <GradientSpan
-          color1='#aa0024'
-          color2=' #f20024'
-          color3='#fff'
-        >
+        <GradientSpan color1='#aa0024' color2=' #f20024' color3='#fff'>
           Chris Costa Motorsports
         </GradientSpan>
       </Heading>
 
       <HeaderFooterIcons />
     </Flex>
-  );
+  )
 }
