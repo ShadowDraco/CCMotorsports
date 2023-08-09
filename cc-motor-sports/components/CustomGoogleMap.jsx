@@ -1,8 +1,8 @@
 'use client'
-import { Flex, Center, Button, Box } from '@chakra-ui/react'
+import { Flex, Center, Button, Box, Heading } from '@chakra-ui/react'
 import { useLoadScript, GoogleMap, MarkerF } from '@react-google-maps/api'
 
-import { useMemo, useState, useRef, useEffect } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 
 const CustomGoogleMap = () => {
   const [mapWidth, setMapWidth] = useState(500)
@@ -39,6 +39,9 @@ const CustomGoogleMap = () => {
 
   return (
     <Box backgroundColor='blackAlpha.300' py={3}>
+      <Heading textAlign={'center'} my={5}>
+        Where are we located?
+      </Heading>
       <Flex mt={5} gap={6} w='100%' justifyContent={'center'}>
         <Button
           onClick={() => {

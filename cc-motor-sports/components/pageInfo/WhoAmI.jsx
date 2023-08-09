@@ -6,6 +6,7 @@ export default function WhoAmI() {
     <Center
       backgroundColor='blackAlpha.300'
       my={3}
+      pb={3}
     >
       <Flex
         flexDir='column'
