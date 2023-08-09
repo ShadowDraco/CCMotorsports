@@ -1,8 +1,9 @@
-'use client';
-import MainHeading from './MainHeading';
-import MainHeadingImage from './MainHeadingImage';
-import { Flex } from '@chakra-ui/react';
-export default function MainHeadingBanner() {
+'use client'
+
+import MainHeading from './MainHeading'
+import MainHeadingImage from './MainHeadingImage'
+import { Flex } from '@chakra-ui/react'
+export default function MainHeadingBanner({ toggleColors }) {
   return (
     <>
       <Flex
@@ -10,9 +11,9 @@ export default function MainHeadingBanner() {
         bgColor={'whiteAlpha.50'}
         flexDir={'column'}
       >
-        <MainHeading />
+        <MainHeading toggleColors={toggleColors} />
         <MainHeadingImage />
       </Flex>
     </>
-  );
+  )
 }

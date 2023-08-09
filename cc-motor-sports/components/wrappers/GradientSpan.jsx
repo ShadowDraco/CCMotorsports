@@ -1,6 +1,12 @@
 import React from 'react'
 
-export default function GradientSpan({ color1, color2, color3, children }) {
+export default function GradientSpan({
+  textAlign,
+  color1,
+  color2,
+  color3,
+  children,
+}) {
   return (
     <span
       style={{
@@ -9,6 +15,7 @@ export default function GradientSpan({ color1, color2, color3, children }) {
         backgroundClip: 'text',
         WebkitBackgroundClip: 'text',
         MozBackgroundClip: 'text',
+        textAlign: textAlign,
       }}
     >
       {children}

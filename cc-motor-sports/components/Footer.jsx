@@ -26,7 +26,7 @@ export default function Footer({ visible }) {
       mt={10}
       p={4}
       alignItems={'center'}
-      justifyContent={'center'}
+      justifyContent={'space-between'}
       gap={3}
       background={'blackAlpha.700'}
       position={'sticky'}
@@ -38,7 +38,12 @@ export default function Footer({ visible }) {
         </GradientSpan>
       </Heading>
 
-      <HeaderFooterIcons />
+      <Flex gap={2} flexDir={'column'}>
+        <GradientSpan color1='#ff2234' color2=' #f20024' color3='#fff'>
+          Contact us:
+        </GradientSpan>
+        <HeaderFooterIcons />
+      </Flex>
     </Flex>
   )
 }
