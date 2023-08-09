@@ -2,12 +2,17 @@
 import { Flex, Center, Button, Box } from '@chakra-ui/react'
 import { useLoadScript, GoogleMap, MarkerF } from '@react-google-maps/api'
 
-import { useMemo, useState, useRef } from 'react'
+import { useMemo, useState, useRef, useEffect } from 'react'
 
 const CustomGoogleMap = () => {
-  const windowSize = useRef([window?.innerWidth, window?.innerHeight])
-  const mapWidth = windowSize.current[0] - 70
+  const [mapWidth, setMapWidth] = useState(500)
   const libraries = useMemo(() => ['places'], [])
+
+  useEffect(() => {
+    setMapWidth(window.innerWidth - 70)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   const mapCenter = useMemo(
     () => ({ lat: 34.087791442871094, lng: -117.37747955322266 }),
     []
