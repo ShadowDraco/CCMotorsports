@@ -30,9 +30,9 @@ const services2 = [
 
 export default function WhatWeDo() {
   return (
-    <Container my={4}>
-      <Heading mb={3} textAlign={'center'}>
-        What do we do?
+    <Container my={4} p={3} backgroundColor={'blackAlpha.400'}>
+      <Heading mb={3} textAlign={'center'} color='white'>
+        We specialize in
       </Heading>
       <Flex color='whiteAlpha.900' justifyContent={'space-between'}>
         <List spacing='3'>
@@ -48,7 +48,7 @@ export default function WhatWeDo() {
           {services2.map((service, i) => {
             return (
               <ListItem key={i}>
-                <Text textAlign='right' fontSize={'large'}>
+                <Text textAlign='right' fontSize={'large'} fontWeight={'bold'}>
                   {service}
                 </Text>
               </ListItem>

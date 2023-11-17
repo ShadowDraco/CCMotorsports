@@ -21,12 +21,7 @@ export default function MainHeading({ toggleColors, colorScheme }) {
             Chris Costa Motorsports
           </GradientSpan>
         </Heading>
-        <IconButton
-          icon={<ViewIcon />}
-          variant='outline'
-          colorScheme={colorScheme === 'red' ? 'orange' : 'red'}
-          onClick={toggleColors}
-        />
+      
       </Flex>
 
       <Flex gap={2} flexDir={'column'}>
