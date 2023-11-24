@@ -1,10 +1,10 @@
 'use client'
-import { ViewIcon } from '@chakra-ui/icons'
+
 import { Flex, Heading, IconButton } from '@chakra-ui/react'
 import GradientSpan from '@/components/wrappers/GradientSpan'
 import HeaderFooterIcons from './HeaderFooterIcons'
 
-export default function MainHeading({ toggleColors, colorScheme }) {
+export default function MainHeading() {
   return (
     <Flex
       p={4}
@@ -27,7 +27,7 @@ export default function MainHeading({ toggleColors, colorScheme }) {
         <GradientSpan color1='#ff2234' color2=' #f20024' color3='#fff'>
           Contact us:
         </GradientSpan>
-        <HeaderFooterIcons toggleColors={toggleColors} />
+        <HeaderFooterIcons />
       </Flex>
     </Flex>
   )

@@ -12,25 +12,6 @@ import { motion, useAnimate } from 'framer-motion'
 import { useFooterAnimation } from '@/hooks/useFooterAnimation'
 
 export default function Home() {
-  const [colorScheme, setColorScheme] = useState('red')
-  const [bgColor1, setBgColor1] = useState('#aa0024')
-  const [bgColor2, setBgColor2] = useState('#fa2340')
-  const [bgColor3, setBgColor3] = useState('#ff5f2a')
-
-  const toggleColors = () => {
-    if (colorScheme === 'red') {
-      setColorScheme('orange')
-      setBgColor1('#ff2342')
-      setBgColor2('#ffaa00')
-      setBgColor3('#fff')
-    } else {
-      setColorScheme('red')
-      setBgColor1('#aa0024')
-      setBgColor2('#fa2340')
-      setBgColor3('#ff5f2a')
-    }
-  }
-
   const [password, setPassword] = useState('')
   const [verified, setVerified] = useState(true)
   const [scope, animate] = useAnimate()
@@ -71,24 +52,22 @@ export default function Home() {
     >
       {verified ? (
         <Flex
+          className='page'
           as={motion.div}
           ref={scope}
           initial={{ opacity: 0, scale: 0.5 }}
           opacity={0}
           mx='auto'
           flexDir='column'
-          width={'98vw'}
+          boxShadow='0.7em 0 0.5em white, -0.7em 0 0.5em white'
+          backgroundImage='linear-gradient(180deg, #aa0024 0%, #fa2340 50%, #ff5f2a 100%)'
+          width='98vw'
           maxWidth={1350}
-          height={'150%'}
-          sx={{ boxShadow: '0.7em 0 0.5em white, -0.7em 0 .5em white;' }}
-          bgImage={`linear-gradient(180deg, ${bgColor1} 0%, ${bgColor2} 50%, ${bgColor3} 100%)`}
+          height='150%'
         >
-          <MainHeadingBanner
-            toggleColors={toggleColors}
-            colorScheme={colorScheme}
-          />
-          <WhoAmI colorScheme={colorScheme} />
-          <WhatWeDo colorScheme={colorScheme} />
+          <MainHeadingBanner />
+          <WhoAmI />
+          <WhatWeDo />
           <GoogleMap address='411 w. Alru st. Rialto CA 92376' />
           <Heading my={9} textAlign={'center'}>
             Our Recent Work
