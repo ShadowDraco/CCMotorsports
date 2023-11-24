@@ -18,7 +18,7 @@ export default function MainHeading({ toggleColors, colorScheme }) {
       <Flex gap={3} flexWrap='wrap'>
         <Heading>
           <GradientSpan color1='#aa0024' color2=' #f20024' color3='#fff'>
-            Chris Costa's Motorsports
+            Chris Costa&apos;s Motorsports
           </GradientSpan>
         </Heading>
       </Flex>
