@@ -22,7 +22,7 @@ export default function page() {
   const [message, setMessage] = useState('')
   const submit = async () => {
     const response = await fetch(
-      `http://localhost:3000/api/appointment/${email}/${phone}/${vehicle}/${make}/${model}/${year}/${description}`,
+      `/api/appointment/${email}/${phone}/${vehicle}/${make}/${model}/${year}/${description}`,
       { method: 'POST' }
     )
     const res = await response.json()
