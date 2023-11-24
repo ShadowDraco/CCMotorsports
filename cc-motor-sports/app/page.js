@@ -2,14 +2,15 @@
 import { Box, Button, Flex, Heading, Input } from '@chakra-ui/react'
 import { useRef, useState, useEffect } from 'react'
 
-import GoogleMap from '@/components/CustomGoogleMap'
-import MSS from '@/components/pageInfo/MSS'
-import WhatWeDo from '@/components/pageInfo/WhatWeDo'
-import WhoAmI from '@/components/pageInfo/WhoAmI'
-import Footer from '@/components/Footer'
+import GoogleMap from '../components/CustomGoogleMap'
+import MSS from '../components/pageInfo/MSS'
+import WhatWeDo from '../components/pageInfo/WhatWeDo'
+import MakeAppointment from '../components/pageInfo/MakeAppointment'
+import WhoAmI from '../components/pageInfo/WhoAmI'
+import Footer from '../components/Footer'
 import { motion, useAnimate } from 'framer-motion'
-import { useFooterAnimation } from '@/hooks/useFooterAnimation'
-import MainHeadingBanner from '@/components/MainHeading'
+import { useFooterAnimation } from '../hooks/useFooterAnimation'
+import MainHeadingBanner from '../components/MainHeading'
 
 export default function Home() {
   const [password, setPassword] = useState('')
@@ -67,6 +68,7 @@ export default function Home() {
         >
           <MainHeadingBanner smallImage={false} />
           <WhoAmI />
+          <MakeAppointment />
           <WhatWeDo />
           <GoogleMap address='411 w. Alru st. Rialto CA 92376' />
           <Heading my={9} textAlign={'center'}>
