@@ -39,7 +39,9 @@ export default function WhatWeDo() {
           {services.map((service, i) => {
             return (
               <ListItem key={i}>
-                <Text fontSize={'large'}>{service}</Text>
+                <Text fontSize={'large'} fontWeight={'bold'}>
+                  {service}
+                </Text>
               </ListItem>
             )
           })}
