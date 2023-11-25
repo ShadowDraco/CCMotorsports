@@ -43,13 +43,26 @@ export default function Page() {
     >
       <MainHeadingBanner smallImage={true} />
       <Text
-        sx={{ pt: 3, fontSize: 'large', color: 'white', textAlign: 'center' }}
+        sx={{
+          pt: 3,
+          fontSize: 'large',
+          color: 'white',
+          textAlign: 'center',
+          mb: 5,
+        }}
       >
         To set up an appointment, fill out the form and you will be emailed back
         soon! Your information will be secure
       </Text>
       <FormControl
-        sx={{ my: 3, p: 3, backgroundColor: 'rgba(20, 20, 20, 0.4)' }}
+        sx={{
+          my: 3,
+          p: 3,
+          backgroundColor: 'rgba(20, 20, 20, 0.4)',
+          margin: 'auto',
+          width: '80%',
+          maxWidth: 700,
+        }}
       >
         <FormLabel sx={{ color: 'white' }}>Email address</FormLabel>
         <Input
@@ -139,7 +152,16 @@ export default function Page() {
         />
       </FormControl>
 
-      <Box sx={{ display: 'flex', gap: 3 }}>
+      <Box
+        sx={{
+          display: 'flex',
+          gap: 3,
+          margin: 'auto',
+          width: '75%',
+          maxWidth: 700,
+          marginTop: 2,
+        }}
+      >
         <Button
           onClick={() => {
             submit()

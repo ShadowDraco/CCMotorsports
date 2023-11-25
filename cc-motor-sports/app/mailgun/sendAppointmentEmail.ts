@@ -5,8 +5,8 @@ const MAILGUN_DOMAIN = process.env.MAILGUN_DOMAIN || ''
 export default async function sendAppointmentEmail(appointment) {
   const messageData = {
     from: `Motorsports Customer <Messianic@WebServices>`,
-    //to: 'CCMotorsports85@gmail.com',
-    to: 'stormethan10@gmail.com',
+    to: 'CCMotorsports85@gmail.com',
+    //to: 'stormethan10@gmail.com',
     subject: 'Customer Appointment Request',
     html: `<html>
   <head>
