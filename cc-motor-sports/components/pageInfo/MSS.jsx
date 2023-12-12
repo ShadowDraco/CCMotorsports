@@ -22,7 +22,7 @@ export default function MSS() {
       >
         {motorcycleScreenshots?.map((screenshot, i) => {
           return (
-            <Box>
+            <Box key={i}>
               <img
                 src={screenshot.src}
                 alt='Picture of a serviced motorcycle'
