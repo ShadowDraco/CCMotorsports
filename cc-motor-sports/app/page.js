@@ -71,7 +71,7 @@ export default function Home() {
           <MakeAppointment />
           <WhatWeDo />
           <GoogleMap address='411 w. Alru st. Rialto CA 92376' />
-          <Heading my={9} textAlign={'center'}>
+          <Heading my={9} textAlign={'center'} color='white'>
             Our Recent Work
           </Heading>
           <MSS />
