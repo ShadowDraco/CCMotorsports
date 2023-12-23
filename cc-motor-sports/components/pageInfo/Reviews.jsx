@@ -49,10 +49,7 @@ export default function Reviews() {
                   width={500}
                   height={500}
                   layout='responsive'
-                  style={{
-                    maxWidth: 500,
-                    objectFit: 'cover',
-                  }}
+                  style={{ maxWidth: 700, maxHeight: 200 }}
                 />
               </Box>
             )
