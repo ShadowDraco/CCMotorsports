@@ -13,6 +13,7 @@ export default function MainHeadingImage({ smallImage }) {
           height={CCBANNER.height}
           alt='CC Motorsports Banner'
           layout='responsive'
+          priority
           style={{ maxWidth: !smallImage ? 900 : 500 }}
         />
       </Link>

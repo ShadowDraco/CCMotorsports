@@ -11,6 +11,7 @@ import {
   Button,
 } from '@chakra-ui/react'
 import MainHeadingBanner from '../../components/MainHeading'
+import HeaderNav from '../../components/MainHeading/HeaderNav'
 export default function Page() {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -43,6 +44,7 @@ export default function Page() {
       py={5}
     >
       <MainHeadingBanner smallImage={true} />
+      <HeaderNav />
       <Text
         sx={{
           pt: 3,

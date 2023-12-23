@@ -4,7 +4,7 @@ import React from 'react'
 import { Center, Box } from '@chakra-ui/react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'
-
+import Image from 'next/Image'
 import { motorcycleScreenshots } from '../../assets/images'
 
 export default function MSS() {
@@ -19,12 +19,16 @@ export default function MSS() {
         emulateTouch
         swipeable
         style={{ width: '80%' }}
+        noThumbs
       >
         {motorcycleScreenshots?.map((screenshot, i) => {
           return (
             <Box key={i}>
-              <img
+              <Image
                 src={screenshot.src}
+                width={500}
+                height={500}
+                priority={true}
                 alt='Picture of a serviced motorcycle'
                 style={{ maxWidth: 500, objectFit: 'cover', maxHeight: 500 }}
               />
