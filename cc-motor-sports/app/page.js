@@ -3,10 +3,11 @@ import { Box, Button, Flex, Heading, Input } from '@chakra-ui/react'
 import { useRef, useState, useEffect } from 'react'
 
 import GoogleMap from '../components/CustomGoogleMap'
-import MSS from '../components/pageInfo/MSS'
+import HeaderNav from '../components/MainHeading/HeaderNav'
 import WhatWeDo from '../components/pageInfo/WhatWeDo'
 import MakeAppointment from '../components/pageInfo/MakeAppointment'
 import WhoAmI from '../components/pageInfo/WhoAmI'
+import Reviews from '../components/pageInfo/Reviews'
 import Footer from '../components/Footer'
 import { motion, useAnimate } from 'framer-motion'
 import { useFooterAnimation } from '../hooks/useFooterAnimation'
@@ -67,14 +68,13 @@ export default function Home() {
           height='150%'
         >
           <MainHeadingBanner smallImage={false} />
+          <HeaderNav />
           <WhoAmI />
           <MakeAppointment />
           <WhatWeDo />
+          <Reviews />
           <GoogleMap address='411 w. Alru st. Rialto CA 92376' />
-          <Heading my={9} textAlign={'center'} color='white'>
-            Our Recent Work
-          </Heading>
-          <MSS />
+
           <Footer visible={footerVisible} />
         </Flex>
       ) : (
