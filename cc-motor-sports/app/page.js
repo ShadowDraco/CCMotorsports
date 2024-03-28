@@ -108,7 +108,7 @@ export default function Home() {
         </Flex>
       )}
       <Text sx={{ color: 'white' }}>
-        Page created by{' '}
+        Web Services by{' '}
         <Link
           style={{ color: 'blue' }}
           target='_blank'
