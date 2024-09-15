@@ -1,5 +1,5 @@
 'use client'
-import { Box, Button, Flex, Center, Heading, Input } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Input } from '@chakra-ui/react'
 import { useRef, useState, useEffect } from 'react'
 
 import MainHeadingBanner from '@/components/MainHeading'
@@ -62,7 +62,12 @@ export default function Home() {
   }
 
   return (
-    <Box ref={mainRef}>
+    <Box
+      ref={mainRef}
+      sx={{
+        backgroundColor: 'blackAlpha.500',
+      }}
+    >
       {verified ? (
         <Flex
           as={motion.div}
@@ -72,7 +77,9 @@ export default function Home() {
           mx='auto'
           flexDir='column'
           width={'98vw'}
+          maxWidth={1350}
           height={'150%'}
+          sx={{ boxShadow: '0.7em 0 0.5em white, -0.7em 0 .5em white;' }}
           bgImage={`linear-gradient(180deg, ${bgColor1} 0%, ${bgColor2} 50%, ${bgColor3} 100%)`}
         >
           <MainHeadingBanner

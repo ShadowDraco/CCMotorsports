@@ -17,6 +17,8 @@ export default function MSS() {
                 width={screenshot.width}
                 height={screenshot.height}
                 alt='Picture of a serviced motorcycle'
+                layout='responsive'
+                style={{ maxWidth: 1000 }}
               />
             </ListItem>
           )
