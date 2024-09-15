@@ -13,8 +13,8 @@ import { useFooterAnimation } from '@/hooks/useFooterAnimation'
 
 export default function Home() {
   const [colorScheme, setColorScheme] = useState('red')
-  const [bgColor1, setBgColor1] = useState('#f02300')
-  const [bgColor2, setBgColor2] = useState('#fff034')
+  const [bgColor1, setBgColor1] = useState('#aa0024')
+  const [bgColor2, setBgColor2] = useState('#fa2340')
   const [bgColor3, setBgColor3] = useState('#ff5f2a')
 
   const toggleColors = () => {
