@@ -1,12 +1,18 @@
 'use client'
 import React from 'react'
-import Image from 'next/image'
+
 import Link from 'next/link'
 import { Center, Container, Box, Heading } from '@chakra-ui/react'
-import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import { Carousel } from 'react-responsive-carousel'
-
+import ImageGallery from 'react-image-gallery'
 import { reviewScreenshots } from '../../assets/images'
+
+const reviews = reviewScreenshots.map(image => {
+  return {
+    original: image.src,
+    thumbnail: image.src,
+    alt: 'A Bike worked on by CC Motorsports!',
+  }
+})
 
 export default function Reviews() {
   return (
@@ -29,33 +35,14 @@ export default function Reviews() {
           </Link>
         </Heading>
       </Center>
-      <Center sx={{ pt: 6 }}>
-        <Carousel
-          autoPlay={true}
-          infiniteLoop
-          interval={4000}
-          showArrows={true}
-          showIndicators
-          emulateTouch
-          swipeable
-          style={{ width: '80%' }}
-        >
-          {reviewScreenshots?.map((screenshot, i) => {
-            return (
-              <Box key={i}>
-                <Image
-                  src={screenshot.src}
-                  alt='Screenshot of a google review'
-                  width={500}
-                  height={500}
-                  layout='responsive'
-                  style={{ maxWidth: 700, maxHeight: 200 }}
-                />
-              </Box>
-            )
-          })}
-        </Carousel>
-      </Center>
+      <Box>
+        <ImageGallery
+          items={reviews}
+          lazyLoad
+          autoPlay
+          style={{ maxWidth: '100%' }}
+        />
+      </Box>
     </Container>
   )
 }

@@ -30,7 +30,7 @@ const services2 = [
 
 export default function WhatWeDo() {
   return (
-    <Container my={4} p={3} backgroundColor={'blackAlpha.400'}>
+    <Container my={4} p={3} backgroundColor={'blackAlpha.300'}>
       <Heading mb={3} textAlign={'center'} color='white'>
         We specialize in
       </Heading>

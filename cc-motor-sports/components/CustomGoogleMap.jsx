@@ -75,7 +75,7 @@ const CustomGoogleMap = () => {
           -
         </Button>
         <Link
-          href={`https://www.google.com/maps/place/683+W+Rialto+Ave,+Rialto,+CA+92376/@34.0991756,-117.3932489,15z/data=!3m1!4b1!4m6!3m5!1s0x80c34d6c9cd15e99:0xc67a0ee74573c6b4!8m2!3d34.0991583!4d-117.3829706!16s%2Fg%2F11f6dcxf06?entry=ttu`}
+          href={`https://www.google.com/maps/place/CC+Motorsports/@34.0990887,-117.383201,19.64z/data=!4m15!1m8!3m7!1s0x80c34d6c9cd15e99:0xc67a0ee74573c6b4!2s683+W+Rialto+Ave,+Rialto,+CA+92376!3b1!8m2!3d34.0991583!4d-117.3829706!16s%2Fg%2F11f6dcxf06!3m5!1s0x80c34d232e8489a9:0x4256027567692af4!8m2!3d34.0991583!4d-117.3829706!16s%2Fg%2F11vb9m8dyq?entry=ttu`}
           target='_blank'
         >
           <Button>Open in Maps</Button>

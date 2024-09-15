@@ -11,7 +11,7 @@ import React from 'react'
 
 export default function WhoAmI() {
   return (
-    <Center backgroundColor={'blackAlpha.500'} p={3} pb={3}>
+    <Center backgroundColor={'blackAlpha.300'} p={3} pb={3}>
       <Flex flexDir='column' mb='3'>
         <Heading textAlign={'center'} my={6} color='white' maxWidth>
           Who are we?
