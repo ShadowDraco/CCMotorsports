@@ -1,26 +1,42 @@
-import { Center, Heading, Text, Flex, Link } from '@chakra-ui/react'
+import {
+  Center,
+  Heading,
+  Text,
+  Flex,
+  Link,
+  UnorderedList,
+  ListItem,
+} from '@chakra-ui/react'
 import React from 'react'
 
 export default function WhoAmI() {
   return (
     <Center backgroundColor={'blackAlpha.500'} p={3} pb={3}>
-      <Flex flexDir='column' textAlign={'center'}>
-        <Heading textAlign={'CENTER'} my={6} color='white'>
+      <Flex flexDir='column' mb='3'>
+        <Heading textAlign={'center'} my={6} color='white' maxWidth>
           Who are we?
         </Heading>
+        <Text
+          fontSize='x-large'
+          color='whiteAlpha.900'
+          textAlign='center'
+          fontWeight={'bold'}
+          mb='2'
+        >
+          My name is Chris Costa{' '}
+        </Text>
         <Text fontSize='x-large' color='whiteAlpha.900' fontWeight={'bold'}>
-          My name is Chris Costa,{' '}
+          <UnorderedList>
+            <ListItem>Mechanic for 20 years:</ListItem>
+            <ListItem>Yamaha Motor Corporation for 15 years</ListItem>
+          </UnorderedList>
         </Text>
-        <Text fontSize='large' color='whiteAlpha.900' fontWeight={'bold'}>
-          Mechanic for 15 years, worked for Yamaha for 8 years
-        </Text>
-        <br></br>
 
         <Flex
           flexWrap={'wrap'}
           justifyContent={'space-between'}
           fontSize={'large'}
-          my='2'
+          mt='5'
         >
           <Text color='rgb(255, 80, 0)' fontWeight={'bold'}>
             {' '}

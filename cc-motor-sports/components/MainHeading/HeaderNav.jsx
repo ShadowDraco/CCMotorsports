@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { AiFillSchedule } from 'react-icons/ai'
+import { MdAccountBox } from 'react-icons/md'
 import { TfiGallery } from 'react-icons/tfi'
 import { Flex, IconButton, Text, Box } from '@chakra-ui/react'
 
@@ -16,7 +17,7 @@ export default function HeaderNav() {
       position={'sticky'}
       top={0}
     >
-      <Box>
+      <Box textAlign='center'>
         <Link href='/appointment'>
           <Text color='white' fontWeight={'bold'}>
             Appointment
@@ -31,7 +32,22 @@ export default function HeaderNav() {
           />
         </Link>
       </Box>
-      <Box>
+      <Box textAlign='center'>
+        <Link href='/about'>
+          <Text color='white' fontWeight={'bold'}>
+            About Me
+          </Text>
+        </Link>
+        <Link href='/about'>
+          <IconButton
+            icon={<MdAccountBox />}
+            variant='outline'
+            colorScheme='red'
+            fontSize='x-large'
+          />
+        </Link>
+      </Box>
+      <Box textAlign='center'>
         {' '}
         <Link href='/gallery'>
           <Text color='white' fontWeight={'bold'}>
