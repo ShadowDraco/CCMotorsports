@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Center, Container, Box, Heading } from '@chakra-ui/react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader

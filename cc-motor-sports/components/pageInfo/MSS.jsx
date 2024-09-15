@@ -4,7 +4,7 @@ import React from 'react'
 import { Center, Box } from '@chakra-ui/react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'
-import Image from 'next/Image'
+import Image from 'next/image'
 import { motorcycleScreenshots } from '../../assets/images'
 
 export default function MSS() {
