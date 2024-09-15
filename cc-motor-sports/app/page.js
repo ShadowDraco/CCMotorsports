@@ -32,7 +32,7 @@ export default function Home() {
   }
 
   const [password, setPassword] = useState('')
-  const [verified, setVerified] = useState(false)
+  const [verified, setVerified] = useState(true)
   const [scope, animate] = useAnimate()
   const mainRef = useRef(null)
 
