@@ -1,7 +1,7 @@
-'use client'
-import MainHeading from './MainHeading'
-import MainHeadingImage from './MainHeadingImage'
-import { Flex } from '@chakra-ui/react'
+'use client';
+import MainHeading from './MainHeading';
+import MainHeadingImage from './MainHeadingImage';
+import { Flex } from '@chakra-ui/react';
 export default function MainHeadingBanner() {
   return (
     <>
@@ -14,5 +14,5 @@ export default function MainHeadingBanner() {
         <MainHeadingImage />
       </Flex>
     </>
-  )
+  );
 }
