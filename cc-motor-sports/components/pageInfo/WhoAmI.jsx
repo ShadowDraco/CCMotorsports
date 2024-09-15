@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function WhoAmI() {
   return (
-    <Center backgroundColor={'blackAlpha.700'} mb={3} p={3} pb={3}>
+    <Center backgroundColor={'blackAlpha.500'} p={3} pb={3}>
       <Flex flexDir='column' textAlign={'center'}>
         <Heading textAlign={'CENTER'} my={6} color='white'>
           Who are we?

@@ -33,6 +33,7 @@ export default function Page() {
   return (
     <Container
       mx='auto'
+      className='FadeMeIn'
       flexDir='column'
       boxShadow='0.7em 0 0.5em white, -0.7em 0 0.5em white'
       backgroundImage='linear-gradient(180deg, #aa0024 0%, #fa2340 50%, #ff5f2a 100%)'
