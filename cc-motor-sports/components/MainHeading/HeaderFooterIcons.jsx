@@ -7,7 +7,7 @@ import { EmailIcon } from '@chakra-ui/icons'
 export default function HeaderFooterIcons() {
   return (
     <Flex gap={2} flexWrap={'wrap'}>
-      <Link href='https://instagram.com/CC_Motorsports85' target='_blank'>
+      <Link href='https://instagram.com/ccmotorsports85' target='_blank'>
         <IconButton
           icon={<BsInstagram />}
           variant='outline'
