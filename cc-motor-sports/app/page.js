@@ -47,6 +47,7 @@ export default function Home() {
     if (verified && scope.current) {
       animate(scope.current, { opacity: 1, scale: 1 }, { duration: 1 })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [verified])
 
   const checkPassword = async () => {
