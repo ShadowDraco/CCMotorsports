@@ -11,7 +11,7 @@ import React from 'react'
 const services = [
   'Tune Up',
   'Services',
-  'Race Pres',
+  'Race Prep',
   'Performance',
   'Suspension',
   'Accessories',

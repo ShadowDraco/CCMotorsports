@@ -16,6 +16,7 @@ export default function GradientSpan({
         WebkitBackgroundClip: 'text',
         MozBackgroundClip: 'text',
         textAlign: textAlign,
+        
       }}
     >
       {children}
