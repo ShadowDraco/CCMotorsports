@@ -1,6 +1,6 @@
 'use client'
 
-import { Flex, Heading, IconButton } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 import GradientSpan from '@/components/wrappers/GradientSpan'
 import HeaderFooterIcons from './HeaderFooterIcons'
 

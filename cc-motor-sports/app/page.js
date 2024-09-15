@@ -2,7 +2,6 @@
 import { Box, Button, Flex, Heading, Input } from '@chakra-ui/react'
 import { useRef, useState, useEffect } from 'react'
 
-import MainHeadingBanner from '@/components/MainHeading'
 import GoogleMap from '@/components/CustomGoogleMap'
 import MSS from '@/components/pageInfo/MSS'
 import WhatWeDo from '@/components/pageInfo/WhatWeDo'
@@ -10,6 +9,7 @@ import WhoAmI from '@/components/pageInfo/WhoAmI'
 import Footer from '@/components/Footer'
 import { motion, useAnimate } from 'framer-motion'
 import { useFooterAnimation } from '@/hooks/useFooterAnimation'
+import MainHeadingBanner from '@/components/MainHeading'
 
 export default function Home() {
   const [password, setPassword] = useState('')
@@ -65,7 +65,7 @@ export default function Home() {
           maxWidth={1350}
           height='150%'
         >
-          <MainHeadingBanner />
+          <MainHeadingBanner smallImage={false} />
           <WhoAmI />
           <WhatWeDo />
           <GoogleMap address='411 w. Alru st. Rialto CA 92376' />
