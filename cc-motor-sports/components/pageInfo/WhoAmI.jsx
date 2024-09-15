@@ -1,7 +1,7 @@
 import { Center, Heading, Text, Flex, Link } from '@chakra-ui/react'
 import React from 'react'
 
-export default function WhoAmI({ colorScheme }) {
+export default function WhoAmI() {
   return (
     <Center backgroundColor={'blackAlpha.700'} mb={3} p={3} pb={3}>
       <Flex flexDir='column' textAlign={'center'}>
