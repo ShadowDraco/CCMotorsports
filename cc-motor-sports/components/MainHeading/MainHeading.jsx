@@ -1,7 +1,7 @@
 'use client'
 
 import { Flex, Heading } from '@chakra-ui/react'
-import GradientSpan from '@/components/wrappers/GradientSpan'
+import GradientSpan from '../../components/wrappers/GradientSpan'
 import HeaderFooterIcons from './HeaderFooterIcons'
 
 export default function MainHeading() {

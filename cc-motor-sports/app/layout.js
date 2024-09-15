@@ -9,7 +9,6 @@ export const metadata = {
   title: 'CC MotorSports',
   description: 'Everything motorsports by Christ Costa',
 }
-import MainHeadingBanner from '@/components/MainHeading'
 
 export default function RootLayout({ children }) {
   return (
