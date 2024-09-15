@@ -30,8 +30,8 @@ const services2 = [
 
 export default function WhatWeDo() {
   return (
-    <Container>
-      <Heading my={7} textAlign={'center'}>
+    <Container my={4}>
+      <Heading mb={3} textAlign={'center'}>
         What do we do?
       </Heading>
       <Flex color='whiteAlpha.900' justifyContent={'space-between'}>
@@ -56,10 +56,6 @@ export default function WhatWeDo() {
           })}
         </List>
       </Flex>
-
-      <Heading textAlign={'center'} my={9}>
-        Where are we located?
-      </Heading>
     </Container>
   )
 }
