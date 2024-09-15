@@ -11,7 +11,7 @@ import {
   Button,
 } from '@chakra-ui/react'
 import MainHeadingBanner from '../../components/MainHeading'
-export default function page() {
+export default function Page() {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [vehicle, setVehicle] = useState('Motorcycle')
