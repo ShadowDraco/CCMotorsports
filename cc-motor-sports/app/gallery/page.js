@@ -3,6 +3,7 @@ import React from 'react'
 import { Heading, Container } from '@chakra-ui/react'
 import MSS from '../../components/pageInfo/MSS'
 import MainHeadingBanner from '../../components/MainHeading'
+import HeaderNav from '../../components/MainHeading/HeaderNav'
 export default function page() {
   return (
     <Container
@@ -17,6 +18,7 @@ export default function page() {
       py={5}
     >
       <MainHeadingBanner smallImage={true} />
+      <HeaderNav />
       <Heading my={9} textAlign={'center'} color='white'>
         Our Recent Work
       </Heading>
