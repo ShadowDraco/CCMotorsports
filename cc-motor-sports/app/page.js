@@ -1,7 +1,7 @@
 'use client'
-import { Box, Button, Flex, Heading, Input } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Input, Text } from '@chakra-ui/react'
 import { useRef, useState, useEffect } from 'react'
-
+import Link from 'next/link'
 import GoogleMap from '../components/CustomGoogleMap'
 import HeaderNav from '../components/MainHeading/HeaderNav'
 import WhatWeDo from '../components/pageInfo/WhatWeDo'
@@ -107,6 +107,16 @@ export default function Home() {
           </Flex>
         </Flex>
       )}
+      <Text sx={{ color: 'white' }}>
+        Page created by{' '}
+        <Link
+          style={{ color: 'blue' }}
+          target='_blank'
+          href='https://github.com/shadowdraco'
+        >
+          Ethan Storm
+        </Link>
+      </Text>
     </Box>
   )
 }
