@@ -3,7 +3,7 @@
 import { Flex, Heading } from '@chakra-ui/react'
 import GradientSpan from '../../components/wrappers/GradientSpan'
 import HeaderFooterIcons from './HeaderFooterIcons'
-
+import Link from 'next/link'
 export default function MainHeading() {
   return (
     <Flex
@@ -18,7 +18,7 @@ export default function MainHeading() {
       <Flex gap={3} flexWrap='wrap'>
         <Heading>
           <GradientSpan color1='#aa0024' color2=' #f20024' color3='#fff'>
-            Chris Costa&apos;s Motorsports
+            <Link href='/'>Chris Costa&apos;s Motorsports</Link>
           </GradientSpan>
         </Heading>
       </Flex>

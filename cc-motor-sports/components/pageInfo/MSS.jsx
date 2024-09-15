@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { List, ListItem, Center } from '@chakra-ui/react'
 
-import { motorcycleScreenshots } from '@/assets/images'
+import { motorcycleScreenshots } from '../../assets/images'
 
 export default function MSS() {
   return (
