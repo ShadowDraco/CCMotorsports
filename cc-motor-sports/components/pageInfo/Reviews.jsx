@@ -12,12 +12,14 @@ export default function Reviews() {
   return (
     <>
       <Center>
-        <Link
-          target='_blank'
-          href='https://www.google.com/search?q=cc+motorsports&oq=&gs_lcrp=EgZjaHJvbWUqCQgCEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQoxNzI1MzlqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8&pccc=1#lrd=0x80c34d232e8489a9:0x4256027567692af4,1,,,,'
-        >
-          <Heading color={'white'}>See Our Reviews!</Heading>
-        </Link>
+        <Heading color={'white'} textDecoration='underline'>
+          <Link
+            target='_blank'
+            href='https://www.google.com/search?q=cc+motorsports&oq=&gs_lcrp=EgZjaHJvbWUqCQgCEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQoxNzI1MzlqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8&pccc=1#lrd=0x80c34d232e8489a9:0x4256027567692af4,1,,,,'
+          >
+            See Our Reviews!
+          </Link>
+        </Heading>
       </Center>
       <Center sx={{ py: 6 }}>
         <Carousel
