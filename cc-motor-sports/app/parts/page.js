@@ -24,7 +24,7 @@ export default function Page() {
   const [message, setMessage] = useState('')
   const submit = async () => {
     const response = await fetch(
-      `/api/appointment/${email}/${phone}/${vehicle}/${make}/${model}/${year}/${description}`,
+      `/api/parts/${email}/${phone}/${vehicle}/${make}/${model}/${year}/${description}`,
       { method: 'POST' }
     )
     const res = await response.json()
@@ -55,8 +55,8 @@ export default function Page() {
           mb: 5,
         }}
       >
-        To set up an appointment, fill out the form and you will be emailed back
-        soon! Your information will be secure
+        Order a list of parts through us, providing details about your ride and
+        contact info!
       </Text>
       <FormControl
         sx={{
@@ -146,9 +146,8 @@ export default function Page() {
           }}
         />
 
-        <FormLabel sx={{ color: 'white' }}>Describe the situation</FormLabel>
+        <FormLabel sx={{ color: 'white' }}>List of parts</FormLabel>
         <Textarea
-          type='text'
           sx={{ color: 'white' }}
           onChange={e => {
             setDescription(e.target.value)
