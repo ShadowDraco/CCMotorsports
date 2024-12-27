@@ -5,7 +5,7 @@ import MSS4 from './motorcycleSS4.webp'
 import MSS5 from './motorcycleSS5.webp'
 import MSS6 from './motorcycleSS6.webp'
 import MSS7 from './motorcycleSS7.webp'
-import MSS8 from './motorcycleSS8.wepb'
+import MSS8 from './motorcycleSS8.webp'
 import MSS9 from './motorcycleSS9.jpg'
 
 
