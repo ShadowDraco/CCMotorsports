@@ -1,11 +1,11 @@
 import MSS1 from './motorcycleSS1.webp'
 import MSS2 from './motorcycleSS2.webp'
 import MSS3 from './motorcycleSS3.webp'
-import MSS4 from './motorcycleSS4.jpg'
-import MSS5 from './motorcycleSS5.jpg'
-import MSS6 from './motorcycleSS6.jpg'
-import MSS7 from './motorcycleSS7.jpg'
-import MSS8 from './motorcycleSS8.jpg'
+import MSS4 from './motorcycleSS4.webp'
+import MSS5 from './motorcycleSS5.webp'
+import MSS6 from './motorcycleSS6.webp'
+import MSS7 from './motorcycleSS7.webp'
+import MSS8 from './motorcycleSS8.wepb'
 import MSS9 from './motorcycleSS9.jpg'
 
 
